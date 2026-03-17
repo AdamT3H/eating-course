@@ -365,7 +365,7 @@
   }
 
   .price{
-    margin-top: 90px;
+    margin-top: 40px;
   }
   
   .oldPrice{
@@ -494,7 +494,7 @@
   .photosContainer {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: -20px;
   }
   
   .photo1 {
