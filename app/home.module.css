@@ -151,6 +151,15 @@
   line-height: 1.5;
   max-width: 450px;
   font-family: var(--font-vollkorn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+:global(.swiper-wrapper) {
+  display: flex;
+  align-items: center;
 }
 
 :global(.swiper-button-prev),
@@ -263,8 +272,8 @@
 }
 
 .ctaButton {
-  background: #2A2925;
-  color: #F0E9E0;
+  background: #ADA696;
+  color: #2a2925;
   border: none;
   padding: 18px 32px;
   font-size: 24px;
@@ -272,6 +281,7 @@
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .ctaButton:hover {
@@ -349,9 +359,8 @@
   }
   
   .ctaButton {
-    font-size: 20px;
+    font-size: 18px;
   }
-
 
   .sliderSection{
     margin-top: 100px;
