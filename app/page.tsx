@@ -1,65 +1,165 @@
-import Image from "next/image";
+"use client";
+
+import styles from "../app/home.module.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <div className="container">
+        <div className={styles.header}>
+          <div className={styles.mainText}>
+            КОЛИ ЇЖА СТАЄ КРИКОМ
+          </div>
+
+          <div className={styles.lowerText}>
+            <div className={styles.lowerTextUpper}>Як не пропустити</div> 
+            <div className={styles.lowerTextLowwer}>перші тривожні дзвіночки РХП у власної дитини</div>
+          </div>
+
+          <div className={styles.price}>
+            <span className={styles.oldPrice}>2490 грн</span>
+            <span className={styles.newPrice}>490 грн</span>
+          </div>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className={styles.whatHappensContainer}>
+          <div className={styles.leftBlock}>
+            <p className={styles.title}>Якщо ви помічаєте, що:</p>
+
+            <ul className={styles.list}>
+              <li>дитина різко обмежує їжу</li>
+              <li>зациклена на вазі або “правильному” харчуванні</li>
+              <li>зривається, переїдає або приховує їжу</li>
+              <li>уникає спільних прийомів їжі</li>
+              <li>різко змінюється настрій після їжі</li>
+            </ul>
+          </div>
+
+          <div className={styles.arrow}>→</div>
+
+          <div className={styles.rightBlock}>
+            <span className={styles.rightBlockText}>Це може бути не “перехідний вік”</span>
+            <span className={styles.rightBlockText}>І не “просто характер”</span>
+            <span className={styles.rightBlockText}>І не “маніпуляція”</span>
+
+            <p className={styles.finalText}>
+              Іноді їжа стає єдиною мовою, якою дитина говорить про свій біль.
+            </p>
+          </div>
+          
         </div>
-      </main>
-    </div>
+
+
+        <div className={styles.ctaWrapper}>
+          <button className={styles.ctaButton}>
+            Отримати міні-курс за 490 грн
+          </button>
+        </div>
+
+
+
+        <section className={styles.sliderSection}>
+
+          <h2 className={styles.sliderTitle}>
+            Цей міні-курс для вас, якщо:
+          </h2>
+
+          <Swiper
+            modules={[Navigation]}
+            navigation
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+          >
+            <SwiperSlide>
+              <div className={styles.slide}>
+                Ви тривожитесь, але не розумієте — це вже проблема чи ще ні
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slide}>
+                Боїтесь сказати щось не те і погіршити ситуацію
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slide}>
+                Хочете допомогти, але не знаєте як
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slide}>
+                Втомились від боротьби навколо їжі
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slide}>
+                Потребуєте чіткої структури дій
+              </div>
+            </SwiperSlide>
+
+          </Swiper>
+
+        </section> 
+      </div>
+
+      <div className={styles.willLearn}>
+        <div className={styles.willLearnContainer}>
+          <p className={styles.willLearnContainerTitle}>Ви дізнаєтесь:</p>
+
+          <ul className={styles.willLearnContainerList}>
+            <li>Чому РХП мають один із найвищих рівнів смертності серед психічних розладів</li>
+            <li>Що відбувається з тілом при анорексії та булімії</li>
+            <li>Чому контроль і тиск погіршують ситуацію</li>
+            <li>Які фрази НЕ можна говорити дитині</li>
+            <li>Як реагувати без агресії та паніки</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div className="container">
+        <div className={styles.fitSection}>
+          <h2 className={styles.fitTitle}>Кому підійде?</h2>
+
+          <div className={styles.fitGrid}>
+            <div className={styles.fitCard}>Батькам дітей 8–17 років</div>
+            <div className={styles.fitCard}>Тим, хто вже бачить тривожні сигнали</div>
+            <div className={styles.fitCard}>Тим, хто хоче діяти на ранній стадії</div>
+            <div className={styles.fitCard}>Тим, хто хоче зрозуміти, а не контролювати</div>
+          </div>
+        </div>
+
+        <div className={styles.ctaSection}>
+          <div className={styles.ctaContainer}>
+            
+            <p className={styles.ctaText}>
+              Якщо ви читаєте це — значить, вам вже не байдуже
+            </p>
+
+            <p className={styles.ctaSubText}>
+              Не чекайте, поки стане гірше
+            </p>
+
+            <button className={styles.ctaButton}>
+              Отримати міні-курс за 490 грн
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+
+    </>
   );
 }
