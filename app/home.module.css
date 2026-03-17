@@ -10,6 +10,7 @@
   color: #2A2925;
   line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.214);
 }
 
 .lowerText{
@@ -24,16 +25,25 @@
 .lowerTextUpper{
   font-size: 18px;
   color: #2a2925b1;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.214);
 }
 
 .lowerTextLowwer{
   font-size: 28px;
   font-style: italic;
-  color: #2A2925;
+  color: #2A2925;  
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.214);
+}
+
+.priceContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .price{
-  margin-top: 46px;
+  margin-top: 100px;
   font-family: var(--font-montserrat);
   font-size: 28px;
   font-weight: 700;
@@ -41,6 +51,19 @@
   flex-direction: column;
   text-align: center;
   line-height: 1.2;
+  background: #ADA696;
+  color: #2a2925;
+  border: none;
+  padding: 18px 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 4px solid #988d77ce;
+  width: fit-content;
+}
+
+.price:hover {
+  transform: scale(1.05) translateY(-3px);
 }
 
 .oldPrice{
@@ -53,6 +76,36 @@
 .newPrice{
   color:rgb(42, 41, 37);
   font-size: 36px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.184);
+}
+
+.photosContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: -100px;
+}
+
+.photoWrapper {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.photoWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+  pointer-events: none;
+}
+
+.photo1 {
+  width: 500px;
+  height: auto;
+  display: block;
 }
 
 .whatHappensContainer{
@@ -61,7 +114,7 @@
   justify-content: center;
   align-items: stretch;
   gap: 50px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .rightBlock{
@@ -175,7 +228,7 @@
 .willLearn{
   width: 100%;
   background-color: #ADA696;
-  margin-top: 120px;
+  margin-top: 150px;
   padding: 70px 0px 60px 0px;
   display: flex;
   align-items: center;
@@ -205,7 +258,7 @@
 }
 
 .fitSection {
-  margin-top: 120px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -239,7 +292,7 @@
 }
 
 .ctaSection {
-  margin-top: 140px;
+  margin-top: 150px;
   margin-bottom: 80px;
   display: flex;
   justify-content: center;
@@ -282,12 +335,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
+  border: 4px solid #988d77ce;
 }
 
 .ctaButton:hover {
   transform: scale(1.05) translateY(-3px);
 }
-
 
 @media (max-width: 600px) {
   .header{
@@ -312,21 +365,21 @@
   }
 
   .price{
-    margin-top: 25px;
+    margin-top: 90px;
   }
   
   .oldPrice{
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .newPrice{
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .whatHappensContainer{
     flex-direction: column;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 90px;
   }
 
   .list{
@@ -355,7 +408,7 @@
   .ctaWrapper {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 90px;
   }
   
   .ctaButton {
@@ -363,7 +416,7 @@
   }
 
   .sliderSection{
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .sliderTitle{
@@ -389,7 +442,7 @@
   }
 
   .willLearn{
-    margin-top: 60px;
+    margin-top: 90px;
     padding: 40px 20px 40px 20px;
     display: flex;
     align-items: center;
@@ -398,11 +451,11 @@
 
   .willLearnContainerTitle{
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .willLearnContainerList{
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 20px;
     line-height: 1.6;
   }
@@ -412,7 +465,7 @@
   }
 
   .fitSection {
-    margin-top: 60px;
+    margin-top: 90px;
   }
 
   .fitTitle {
@@ -435,6 +488,18 @@
   }
 
   .ctaSection {
-    margin-top: 80px;
+    margin-top: 90px;
+  }
+
+  .photosContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .photo1 {
+    width: 300px;
+    height: auto;
+    display: block;
   }
 }

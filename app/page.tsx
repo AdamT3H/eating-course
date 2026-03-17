@@ -22,11 +22,20 @@ export default function Home() {
             <div className={styles.lowerTextLowwer}>перші тривожні дзвіночки РХП у власної дитини</div>
           </div>
 
-          <div className={styles.price}>
-            <span className={styles.oldPrice}>2490 грн</span>
-            <span className={styles.newPrice}>490 грн</span>
+          <div className={styles.priceContainer}>
+            <div className={styles.price}>
+              <span className={styles.oldPrice}>2490 грн</span>
+              <span className={styles.newPrice}>490 грн</span>
+            </div>
           </div>
 
+
+        </div>
+        
+        <div className={styles.photosContainer}>
+          <div className={styles.photoWrapper}>
+            <img src="/IMG_2221.png" className={styles.photo1} />
+          </div>
         </div>
 
         <div className={styles.whatHappensContainer}>
@@ -53,9 +62,7 @@ export default function Home() {
               Іноді їжа стає єдиною мовою, якою дитина говорить про свій біль.
             </p>
           </div>
-          
         </div>
-
 
         <div className={styles.ctaWrapper}>
           <button className={styles.ctaButton}>
