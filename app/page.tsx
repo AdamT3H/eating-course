@@ -34,13 +34,17 @@ export default function Home() {
           </div>
 
           <div className={styles.ctaWrapper}>
-          <button
-            className={styles.ctaButton}
-            onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
-          >
-            Отримати міні-курс за 490 грн
-          </button>
+            <button
+              className={styles.ctaButton}
+              onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+            >
+              Отримати міні-курс за 490 грн
+            </button>
+          </div>
         </div>
+
+        <div className={styles.photosContainer2}>
+          <img src="/IMG_2495.PNG" className={styles.photo2} />
         </div>
 
         <div className={styles.whatHappensContainer}>
