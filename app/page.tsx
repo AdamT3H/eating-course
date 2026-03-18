@@ -5,6 +5,8 @@ import styles from "../app/home.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
+import CountdownTimer from "../components/timer";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -13,28 +15,28 @@ export default function Home() {
     <>
       <div className="container">
         <div className={styles.header}>
+
           <div className={styles.mainText}>
             КОЛИ ЇЖА СТАЄ КРИКОМ
           </div>
 
           <div className={styles.lowerText}>
-            <div className={styles.lowerTextUpper}>Як не пропустити</div> 
-            <div className={styles.lowerTextLowwer}>перші тривожні дзвіночки РХП у власної дитини</div>
+            <div className={styles.lowerTextLowwer}> Як не пропустити перші тривожні дзвіночки РХП у власної дитини</div>
           </div>
 
-          <div className={styles.priceContainer}>
-            <div className={styles.price}>
-              <span className={styles.oldPrice}>2490 грн</span>
-              <span className={styles.newPrice}>490 грн</span>
-            </div>
+          <div>
+            <CountdownTimer/>
           </div>
 
+          <div className={styles.price}>
+            <span className={styles.oldPrice}>2490 грн</span>
+            <span className={styles.newPrice}>490 грн</span>
+          </div>
 
-        </div>
-        
-        <div className={styles.photosContainer}>
-          <div className={styles.photoWrapper}>
-            <img src="/IMG_2221.png" className={styles.photo1} />
+          <div className={styles.ctaWrapper}>
+            <button className={styles.ctaButton}>
+              Отримати міні-курс за 490 грн
+            </button>
           </div>
         </div>
 
@@ -61,6 +63,12 @@ export default function Home() {
             <p className={styles.finalText}>
               Іноді їжа стає єдиною мовою, якою дитина говорить про свій біль.
             </p>
+          </div>
+        </div>
+
+        <div className={styles.photosContainer}>
+          <div className={styles.photoWrapper}>
+            <img src="/IMG_2221.png" className={styles.photo1} />
           </div>
         </div>
 
