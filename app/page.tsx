@@ -34,10 +34,13 @@ export default function Home() {
           </div>
 
           <div className={styles.ctaWrapper}>
-            <button className={styles.ctaButton}>
-              Отримати міні-курс за 490 грн
-            </button>
-          </div>
+          <button
+            className={styles.ctaButton}
+            onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+          >
+            Отримати міні-курс за 490 грн
+          </button>
+        </div>
         </div>
 
         <div className={styles.whatHappensContainer}>
@@ -61,7 +64,7 @@ export default function Home() {
             <span className={styles.rightBlockText}>І не “маніпуляція”</span>
 
             <p className={styles.finalText}>
-              Іноді їжа стає єдиною мовою, якою дитина говорить про свій біль.
+              Іноді їжа стає єдиною мовою, якою дитина говорить про свій біль
             </p>
           </div>
         </div>
@@ -73,7 +76,10 @@ export default function Home() {
         </div>
 
         <div className={styles.ctaWrapper}>
-          <button className={styles.ctaButton}>
+          <button
+            className={styles.ctaButton}
+            onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+          >
             Отримати міні-курс за 490 грн
           </button>
         </div>
@@ -166,9 +172,13 @@ export default function Home() {
               Не чекайте, поки стане гірше
             </p>
 
-            <button className={styles.ctaButton}>
+            <button
+              className={styles.ctaButton}
+              onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+            >
               Отримати міні-курс за 490 грн
             </button>
+
 
           </div>
         </div>
