@@ -76,8 +76,81 @@
 
 .photosContainer {
   display: flex;
-  justify-content: end;
   margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.214);
+  color: #2A2925;
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+  padding: 40px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #f8f4ef 0%, #fdfaf7 100%);
+  color: #2a2925;
+}
+
+.aboutMe {
+  text-align: left;
+  font-family: var(--font-montserrat);
+  max-width: 700px;
+}
+
+.aboutMeLabel {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.aboutMeTitle{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.aboutMeDescription{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.aboutMeMoreTitle{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.aboutMeMore{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  font-family: var(--font-montserrat);
+}
+
+.aboutMeMorelist{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.aboutMeMoreDescription1{
+  background-color: #f0e9e0e0;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 20px;
+  border-radius: 18px;
+  font-family: var(--font-vollkorn);
+  box-shadow: 0px 0px 15px #c3bbb2d7;
+  font-weight: 500;
 }
 
 .photosContainer2 {
@@ -507,9 +580,51 @@
   }
 
   .photosContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: -20px;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .aboutMeLabel {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .aboutMeTitle{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .aboutMeDescription{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .aboutMe {
+    text-align: left;
+    font-family: var(--font-montserrat);
+    max-width: 350px;
+  }
+
+  .aboutMeMoreTitle{
+    font-size: 24px;
+  }
+
+  .aboutMeMorelist{
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+  }
+
+  .aboutMeMoreDescription1{
+    background-color: #f0e9e0e0;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 18px;
+    font-family: var(--font-vollkorn);
+    box-shadow: 0px 0px 15px #c3bbb2d7;
+    font-weight: 500;
   }
   
   .photo1 {

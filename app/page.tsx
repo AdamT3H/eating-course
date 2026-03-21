@@ -74,8 +74,34 @@ export default function Home() {
         </div>
 
         <div className={styles.photosContainer}>
+          <div className={styles.aboutMe}>
+            <span className={styles.aboutMeLabel}>Чому я можу про це говорити?</span>
+            <h2 className={styles.aboutMeTitle}>Давайте знайомитись ближче</h2>
+            <p className={styles.aboutMeDescription}>
+              Мене звати Анастасія - я психолог, що спеціалізується на розладах
+              харчової поведінки.
+            </p>
+          </div>
+
           <div className={styles.photoWrapper}>
             <img src="/IMG_2221.png" className={styles.photo1} />
+          </div>
+        </div>
+
+        <div className={styles.aboutMeMore}>
+          <h2 className={styles.aboutMeMoreTitle}>У своїй роботі я поєдную</h2>
+          <div className={styles.aboutMeMorelist}> 
+            <p className={styles.aboutMeMoreDescription1}>
+              гештальт-підхід (контакт, усвідомлення, робота з емоціями)
+            </p>
+
+            <p className={styles.aboutMeMoreDescription1}>
+              КПТ (робота з мисленням і поведінковими патернами)
+            </p>
+
+            <p className={styles.aboutMeMoreDescription1}>
+              майндфулнес (навички присутності та регуляції стану)
+            </p>
           </div>
         </div>
 
