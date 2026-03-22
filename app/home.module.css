@@ -118,6 +118,8 @@
 .aboutMeDescription{
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
 
 .aboutMeMoreTitle{
@@ -582,10 +584,11 @@
   .photosContainer {
     margin-top: 40px;
     flex-direction: column;
+    
   }
 
   .aboutMeLabel {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-weight: 700;
   }
@@ -598,6 +601,7 @@
   .aboutMeDescription{
     font-size: 14px;
     font-weight: 500;
+    
   }
 
   .aboutMe {
@@ -635,6 +639,11 @@
 
   .photo2 {
     width: 400px;
+  }
+
+
+  .photoWrapper {
+    transform: translateY(-40px);
   }
   
 }
