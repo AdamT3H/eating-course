@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
       >
-        <Script id="fb-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -41,6 +41,16 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1496123188770575&ev=PageView&noscript=1"
+          />
+        </noscript>
+
         {children}
       </body>
     </html>
