@@ -4,6 +4,7 @@ import styles from "../app/home.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { useRef } from "react";
 
 import CountdownTimer from "../components/timer";
 
@@ -11,6 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function Home() {
+  const lastSectionRef = useRef<HTMLButtonElement | null>(null);
+
+  const scrollToLast = () => {
+    lastSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="container">
@@ -36,7 +43,7 @@ export default function Home() {
           <div className={styles.ctaWrapper}>
             <button
               className={styles.ctaButton}
-              onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+              onClick={scrollToLast}
             >
               Отримати міні-курс за 490 грн
             </button>
@@ -126,7 +133,7 @@ export default function Home() {
         <div className={styles.ctaWrapper}>
           <button
             className={styles.ctaButton}
-            onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+            onClick={scrollToLast}
           >
             Отримати міні-курс за 490 грн
           </button>
@@ -223,6 +230,7 @@ export default function Home() {
             <button
               className={styles.ctaButton}
               onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
+              ref={lastSectionRef}
             >
               Отримати міні-курс за 490 грн
             </button>
