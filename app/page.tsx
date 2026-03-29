@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className={styles.price}>
             <span className={styles.oldPrice}>2490 грн</span>
-            <span className={styles.newPrice}>490 грн</span>
+            <span className={styles.newPrice}>249 грн</span>
           </div>
 
           <div className={styles.ctaWrapper}>
@@ -45,7 +45,7 @@ export default function Home() {
               className={styles.ctaButton}
               onClick={scrollToLast}
             >
-              Отримати міні-курс за 490 грн
+              Отримати міні-курс за 249 грн
             </button>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function Home() {
             className={styles.ctaButton}
             onClick={scrollToLast}
           >
-            Отримати міні-курс за 490 грн
+            Отримати міні-курс за 249 грн
           </button>
         </div>
 
@@ -232,7 +232,7 @@ export default function Home() {
               onClick={() => window.location.href = "https://secure.wayforpay.com/button/b16d9646a6244"}
               ref={lastSectionRef}
             >
-              Отримати міні-курс за 490 грн
+              Отримати міні-курс за 249 грн
             </button>
 
 
